@@ -1,0 +1,947 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+
+  .sdg {
+    padding: 0 2em;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2em;
+    font-family: monospace;
+
+    .logo {
+      font-size: 1em;
+      opacity: 0.8;
+
+      span {
+        font-size: 0.9em;
+        font-weight: 200;
+      }
+    }
+    .nav-links {
+      display: none;
+    }
+
+    i {
+      font-size: 1.5em;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .hero-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 1em;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .text {
+      display: flex;
+      justify-content: space-between;
+      font-family: monospace;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+  }
+
+  .img-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      h1 {
+        font-size: 2.7em;
+        font-weight: 350;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+      p {
+        font-size: 1.5em;
+        font-family: monospace;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+      .services {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+        padding-top: 1em;
+
+        .service {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            font-size: 1.9em;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .vertical-text {
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      gap: 1em;
+      padding-top: 1em;
+
+      p {
+        writing-mode: vertical-rl;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-family: monospace;
+      }
+      .text {
+        padding-left: 1em;
+
+        h1 {
+          font-size: 2.8em;
+          font-weight: 400;
+          line-height: 1.1;
+          text-transform: uppercase;
+          padding-bottom: 0.5em;
+        }
+
+        p {
+          writing-mode: initial;
+          font-size: 1.3em;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          text-transform: capitalize;
+          line-height: 1.5;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
+  .servi {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 6em;
+
+    .top {
+      width: 100%;
+      aspect-ratio: 1/1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4em 2em 4em 0;
+
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+        h2 {
+          font-size: 2.7em;
+          font-weight: 500;
+          line-height: 1;
+        }
+
+        .service-text {
+          h3 {
+            font-size: 1.7em;
+            font-weight: 400;
+            padding-top: 0.7em;
+          }
+          p {
+            font-size: 1.55em;
+            line-height: 1.4;
+            font-family: monospace;
+            opacity: 0.6;
+            padding: 1.1em 0;
+          }
+          .tt {
+            font-size: 1.2em;
+            opacity: 1;
+
+            i {
+              background-color: black;
+              color: white;
+              padding: 0.7em;
+              border-radius: 50%;
+              rotate: 330deg;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .work {
+    width: 100%;
+    padding-top: 4em;
+
+    .top {
+      width: 100%;
+      padding: 4em 1em;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+
+      .bo {
+        width: 100%;
+        display: grid;
+        // grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+          "w1"
+          "w3"
+          "w6"
+          "w4";
+        gap: 1.5em;
+        .fi {
+          display: none;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          padding: 1.6em 2em;
+          justify-content: space-between;
+
+          h3 {
+            font-size: 4.5em;
+            font-weight: 350;
+          }
+          p {
+            font-size: 1.6em;
+            line-height: 1.4;
+            opacity: 0.9;
+            font-family: monospace;
+            padding-bottom: 3em;
+          }
+          .st {
+            font-size: 1.2em;
+            opacity: 1;
+
+            i {
+              background-color: black;
+              color: white;
+              padding: 0.7em;
+              border-radius: 50%;
+              rotate: 330deg;
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .clints {
+    width: 100%;
+    padding-top: 2em;
+    display: grid;
+    place-items: end;
+
+    .top {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .bottom {
+      width: 100%;
+      padding: 3em 0;
+
+      .text-cover {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 2em 0;
+        justify-content: space-between;
+
+        .text-item {
+          display: flex;
+          flex-direction: row;
+          gap: 2em;
+
+          .www {
+            font-size: 2em;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    width: 100%;
+
+    .top {
+      padding: 4em 2em;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 4em;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 1em;
+        line-height: 1.4;
+        font-weight: 200;
+        opacity: 0.9;
+        font-family: monospace;
+        padding: 1em 0 2em 0;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .btc {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+        .card {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            text-transform: uppercase;
+            opacity: 0.9;
+          }
+
+          .details {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .social-icons {
+              display: flex;
+              flex-direction: row;
+              gap: 0.4em;
+            }
+          }
+
+          .pp {
+            font-size: 1.5em;
+            line-height: 1.4;
+            font-family: monospace;
+            opacity: 0.5;
+            padding: 1em 0 3em 0;
+          }
+
+          .ii {
+            width: 100%;
+            aspect-ratio: 1/1;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .join {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // padding-left: 2em;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 2em 2em;
+
+      p {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        font-family: monospace;
+        opacity: 0.8;
+      }
+      h2 {
+        font-size: 2.6em;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+      .ff {
+        font-size: 1.2em;
+        opacity: 1;
+        padding: 2em 0 4em 0;
+
+        i {
+          background-color: black;
+          color: white;
+          padding: 0.6em;
+          border-radius: 50%;
+          rotate: 330deg;
+        }
+      }
+    }
+  }
+
+  .lets {
+    width: 100%;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    background-color: black;
+
+    .line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      h2 {
+        color: white;
+        font-size: 3em;
+        // padding: 0 -2em 0 -2em;
+        font-weight: 300;
+      }
+      h3 {
+        color: white;
+        font-size: 1.6em;
+        font-weight: 200;
+        font-family: monospace;
+        padding: 0.4em 0 0.7em 0;
+      }
+      button {
+        padding: 1em 1.3em;
+        background-color: white;
+        border-radius: 2em;
+
+        i {
+          background-color: white;
+          color: black;
+          padding: 0 0.7em;
+          border-radius: 50%;
+          rotate: 130deg;
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    margin-top: -3em;
+    display: flex;
+    padding: 0 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .top {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding-top: 2em;
+      gap: 2em;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        .fl {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        }
+
+        .topper {
+          padding-bottom: 1em;
+
+          h3 {
+            font-size: 0.9em;
+            font-weight: 300;
+          }
+        }
+
+        .tp {
+          font-size: 0.9em;
+          padding-bottom: 5em;
+
+          h2 {
+            font-weight: 400;
+            font-size: 0.8em;
+          }
+        }
+        .yb {
+          display: flex;
+          flex-direction: column;
+          h4 {
+            font-size: 0.6em;
+          }
+          i {
+            font-size: 0.7em;
+          }
+        }
+        .link {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          p {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 2em;
+      padding: 2em 3em 2em 3em;
+
+      p {
+        font-size: 0.5em;
+        opacity: 0.8;
+        word-spacing: 1em;
+      }
+      .da {
+        display: flex;
+        flex-direction: row;
+        padding-left: 1em;
+        h5 {
+          padding-right: 0.6em;
+          font-family: monospace;
+          font-size: 1.2em;
+        }
+        i {
+          background-color: white;
+          color: black;
+          padding: 0.6em 0.8em 0.6em 0.8em;
+          border-radius: 50%;
+          margin-top: -0.6em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    gap: 3rem;
+
+    .sdg {
+      padding: 1em 4em;
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 3em;
+      font-family: monospace;
+
+      .logo {
+        font-size: 1.1em;
+        opacity: 0.8;
+        padding-left: 1em;
+
+        span {
+          font-size: 0.9em;
+          font-weight: 200;
+        }
+      }
+
+      i {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2.7em;
+
+        p {
+          font-size: 1.3em;
+          padding-top: 0.8em;
+          opacity: 0.9;
+        }
+
+        button {
+          background-color: black;
+          color: rgba(255, 255, 255, 0.932);
+          border: none;
+          padding: 0.9em 1.9em;
+          border-radius: 2em;
+        }
+      }
+    }
+    .img-text {
+      display: flex;
+      flex-direction: row-reverse !important;
+
+      .bottom {
+        padding: 2em 0;
+
+        h1 {
+          font-size: 5em !important;
+        }
+        p {
+          font-size: 1.8em !important;
+        }
+      }
+    }
+    .vertical-text {
+      display: flex;
+      flex-direction: row !important;
+      padding-top: 2em;
+
+      .bottom {
+        flex-direction: row-reverse !important;
+        padding: 2em 0;
+
+        p {
+          font-size: 1.1em !important;
+        }
+
+        .text {
+          padding-left: 3em !important;
+
+          h1 {
+            font-size: 6.5em !important;
+            font-weight: 350;
+            line-height: 1;
+          }
+
+          p {
+            font-size: 1.3em !important;
+          }
+        }
+      }
+    }
+    .servi {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 6em;
+
+      .bottom {
+        .service-item {
+          display: grid;
+          grid-template-areas:
+            "a1 a1"
+            "a2 a3"
+            "a4 a5" !important;
+          gap: 2em;
+
+          h2 {
+            font-size: 7em;
+            font-weight: 350;
+          }
+        }
+      }
+    }
+    .work {
+      .bottom {
+        display: flex;
+        flex-direction: row;
+
+        .bo {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-areas:
+            "w1 w2 w3"
+            "w4 w5 w6";
+          gap: 1.5em;
+
+          .fi {
+            display: flex;
+          }
+        }
+      }
+    }
+    .clints {
+      width: 100%;
+      padding-top: 2em;
+      display: grid;
+      place-items: end;
+
+      .top {
+        width: 30%;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .bottom {
+        width: 50%;
+        padding: 3em 0;
+      }
+    }
+    .team {
+      .top {
+        padding: 4em 4em;
+        display: flex;
+        flex-direction: row;
+        gap: 20em;
+
+        h1 {
+          font-size: 8em;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 1.7em;
+          line-height: 1.4;
+          font-weight: 200;
+          opacity: 0.9;
+          font-family: monospace;
+          padding: 2.4em 0;
+        }
+      }
+      .bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .btc {
+          display: flex;
+          flex-direction: row;
+          gap: 3em;
+        }
+      }
+    }
+    .join {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: 3em;
+      padding-right: 1em;
+.top{
+      h2 {
+        font-size: 4em;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+    }
+    }
+
+    .lets {
+      .line {
+        h2 {
+          color: white;
+          font-size: 14em;
+          // padding: 0 -2em 0 -2em;
+          font-weight: 350;
+        }
+        h3 {
+          color: white;
+          font-size: 3em;
+          font-weight: 400;
+          padding: 0 2.8em 0.7em 2.8em;
+        }
+      }
+    }
+
+    .footer {
+      width: 100%;
+      color: white;
+      background-color: black;
+      margin-top: -3em;
+
+      .top {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 2em;
+        justify-content: space-around;
+        gap: 2em;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+          padding-bottom: 2em;
+
+          .fl {
+            display: flex;
+            flex-direction: column;
+          }
+          .topper {
+            padding-bottom: 1em;
+            h3 {
+              font-size: 1.2em;
+              font-weight: 600;
+            }
+          }
+
+          .tp {
+            font-size: 1em;
+            padding-bottom: 10em;
+
+            h2 {
+              font-weight: 400;
+              font-size: 1.3em;
+            }
+          }
+          .yb {
+            display: flex;
+            flex-direction: column;
+            h4 {
+              font-size: 0.4em;
+            }
+            i {
+              font-size: 2em;
+            }
+          }
+
+          .link {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            font-size: 2em;
+          }
+        }
+      }
+
+      .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2em;
+        padding: 2em 5em 2em 5em;
+
+        p {
+          font-size: 0.8em;
+          opacity: 0.8;
+          word-spacing: 1em;
+        }
+        .da {
+          display: flex;
+          flex-direction: row;
+          h5 {
+            padding-right: 0.6em;
+            font-family: monospace;
+            font-size: 1.5em;
+          }
+          i {
+            background-color: white;
+            color: black;
+            padding: 1em 1.1em 1em 1.1em;
+            border-radius: 50%;
+            margin-top: -1em;
+          }
+        }
+      }
+    }
+  }
+}
