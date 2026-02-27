@@ -1,7 +1,7 @@
 # ErikK – Modern Landing Page Website 🌐
 
 A modern, responsive, and visually appealing landing page built using **HTML, CSS and SCSS**.  
-This project focuses on clean UI design, smooth interactions, and optimized front-end performance..
+This project focuses on clean UI design, smooth interactions, and optimized front-end performance.
 
 🔗 **Live Demo:**  
 https://erikk-two.vercel.app/
